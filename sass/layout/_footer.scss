@@ -33,7 +33,6 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
@@ -44,14 +43,14 @@
 .footer-link {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--accent-color);
-}
+
 .footer-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
@@ -62,14 +61,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-title-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
-}
+
 .social-footer {
   margin-left: 70px;
   margin-right: 93px;
@@ -98,18 +97,18 @@
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+    & .footer-social-icon {
+      fill: #ffffff;
+    }
+  }
 }
-.footer-social:focus,
-.footer-social:hover {
-  background-color: #2196f3;
-  border-radius: 50%;
-}
+
 .footer-social-icon {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
-}
-.footer-social:focus .footer-social-icon,
-.footer-social:hover .footer-social-icon {
   fill: #ffffff;
 }

@@ -62,11 +62,12 @@
   letter-spacing: 0.02em;
   color: var(--header-text-color);
   position: relative;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+
 .header-contacts-item:focus,
 .header-contacts-item:hover {
   fill: #2196f3;
@@ -78,11 +79,12 @@
   letter-spacing: 0.02em;
   color: var(--header-link-color);
   margin-right: 50px;
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-  color: var(--accent-color);
-}
+
 .mail-icon {
   height: 12px;
   width: 16px;
