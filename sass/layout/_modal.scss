@@ -10,11 +10,8 @@
 .modal-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
+  @include font(20px, bold, 23px, 0.03em);
   margin-bottom: 12px;
   color: #212121;
 }

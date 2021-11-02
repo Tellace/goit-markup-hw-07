@@ -1,10 +1,7 @@
 .form-head {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 700px, 16px, 0.03em);
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #ffffff;
@@ -36,13 +33,10 @@
 }
 
 .footer-input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  @extend %roboto-txt;
   font-size: 16px;
   line-height: calc(20 / 16);
-  display: flex;
-  align-items: center;
+  @extend %align-item;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -55,14 +49,10 @@
   border-radius: 4px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(16px, 700px, 30px, 0.06em);
   border: none;
-  display: flex;
-  align-items: center;
+  @extend %align-item;
   text-align: center;
-  letter-spacing: 0.06em;
   padding-left: 29px;
   color: #ffffff;
   cursor: pointer;

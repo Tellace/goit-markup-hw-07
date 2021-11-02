@@ -11,9 +11,8 @@
   display: flex;
 }
 .header-contact {
-  display: flex;
+  @extend %align-item;
   margin-left: auto;
-  align-items: center;
 }
 .header-logo {
   display: block;
@@ -22,10 +21,7 @@
   left: 215px;
   top: 24px;
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 700px, 31px, 0.03em);
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 93px;
@@ -34,8 +30,7 @@
   color: black;
 }
 .header-menu {
-  display: flex;
-  align-items: center;
+  @extend %align-item;
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
@@ -57,9 +52,7 @@
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 500px, 16px, 0.02em);
   color: var(--header-text-color);
   position: relative;
   &:hover,

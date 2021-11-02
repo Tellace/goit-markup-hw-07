@@ -42,9 +42,7 @@
 }
 
 .animate-plate {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  @extend %roboto-txt;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -62,10 +60,7 @@
 }
 .description {
   padding-top: 20px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, bold, 36px, 0.06em);
   color: var(--secondary-title-color);
 }
 .type {
@@ -111,19 +106,13 @@
 .description {
   padding-bottom: 4px;
   padding-left: 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, 700px, 36px, 0.06em);
   color: #212121;
 }
 .type {
   padding-bottom: 20px;
   padding-left: 24px;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font(16px, normal, 30px, 0.03em);
   color: #757575;
 }

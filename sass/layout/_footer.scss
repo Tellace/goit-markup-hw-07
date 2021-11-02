@@ -30,10 +30,7 @@
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(26px, 700px, 31px, 0.03em);
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -56,9 +53,7 @@
   margin-bottom: 9px;
 }
 .address-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  @extend %roboto-txt;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -76,10 +71,7 @@
 .social-head {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 700px, 16px, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;

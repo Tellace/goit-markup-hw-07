@@ -1,14 +1,11 @@
 .check-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  @extend %roboto-txt;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
-  display: flex;
+  @extend %align-item;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
   span {
     width: 16px;
@@ -16,8 +13,7 @@
     border: 2px solid #212121;
     border-radius: 3px;
     margin-right: 8px;
-    display: flex;
-    align-items: center;
+    @extend %align-item;
     justify-content: center;
   }
 }

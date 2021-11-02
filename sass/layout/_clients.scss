@@ -7,11 +7,9 @@
 .regular-clients {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+
+  @include font(36px, 700px, 42px, 0.8px);
   text-align: center;
-  letter-spacing: 0.8px;
   margin-bottom: 50px;
 }
 .clients-list {

@@ -11,11 +11,8 @@
   margin-bottom: 10px;
 }
 .advantage-description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--header-link-color);
-  font-weight: normal;
+  @include font(14px, 400px, 24px, 0.03em);
 }
 .advantage {
   text-decoration: none;

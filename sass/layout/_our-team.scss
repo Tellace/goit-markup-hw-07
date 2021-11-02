@@ -4,14 +4,11 @@
   padding-bottom: 94px;
 }
 .our-team {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, bold, 42px, 0.03em);
   text-align: center;
   justify-content: center;
   color: var(--header-text-color);
   margin-bottom: 50px;
-  letter-spacing: 0.03em;
 }
 .people-list {
   display: flex;
@@ -34,11 +31,8 @@
 }
 .team-personal-name {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  @include font(16px, 500px, 19px, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-position {
   margin-bottom: 16px;

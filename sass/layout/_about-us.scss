@@ -13,9 +13,8 @@
   margin-bottom: 50px;
 }
 .examples {
-  display: flex;
+  @extend %align-item;
   flex-basis: calc(100% / 3 - 90px);
-  align-items: center;
 }
 .example-item:not(:last-child) {
   margin-right: 30px;
@@ -24,8 +23,7 @@
   position: relative;
 }
 .shadow {
-  display: flex;
-  align-items: center;
+  @extend %align-item;
   justify-content: center;
   position: absolute;
   bottom: 0;
@@ -37,10 +35,8 @@
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
+  @include font(14px, 700px, 16px, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }

@@ -9,6 +9,28 @@
   --our-team-color: #f5f4fa;
 }
 
+.backdrop, .check-text, .check-text span, .header-contact, .header-menu, .examples, .shadow, .footer-input::placeholder, .form-btn {
+  display: flex;
+  align-items: center;
+}
+
+.input-label, .modal-text-input::placeholder, .check-text, .address-link, .footer-input::placeholder, .animate-plate {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 p,
 h1,
 h2,
@@ -64,9 +86,9 @@ body {
 
 .btn {
   font-family: inherit;
-  font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  font-weight: bold;
+  line-height: 30px;
   letter-spacing: 0.06em;
   border: none;
   border-radius: 4px;
@@ -116,25 +138,12 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .backdrop {
   position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
@@ -169,9 +178,6 @@ body {
 
 .input-label {
   display: block;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -245,9 +251,6 @@ body {
 }
 
 .modal-text-input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
@@ -255,16 +258,11 @@ body {
 }
 
 .check-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
-  display: flex;
   justify-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 
@@ -274,8 +272,6 @@ body {
   border: 2px solid #212121;
   border-radius: 3px;
   margin-right: 8px;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -304,9 +300,7 @@ body {
 }
 
 .header-contact {
-  display: flex;
   margin-left: auto;
-  align-items: center;
 }
 
 .header-logo {
@@ -316,9 +310,9 @@ body {
   left: 215px;
   top: 24px;
   font-family: Raleway;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700px;
+  line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
@@ -327,11 +321,6 @@ body {
 
 .studio {
   color: black;
-}
-
-.header-menu {
-  display: flex;
-  align-items: center;
 }
 
 .header-item:not(:last-child) {
@@ -357,7 +346,8 @@ body {
 .header-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 500px;
+  line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
   position: relative;
@@ -414,9 +404,10 @@ body {
   margin-bottom: 50px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-weight: 900px;
+  line-height: 60px;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-title-color);
 }
@@ -424,10 +415,10 @@ body {
 .hero-btn {
   padding: 10px 32px;
   cursor: pointer;
-  font-weight: bold;
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 700px;
+  line-height: 30px;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
   background-color: #2196f3;
@@ -453,11 +444,11 @@ body {
 }
 
 .advantage-description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--header-link-color);
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
 
 .advantage {
@@ -529,9 +520,7 @@ body {
 }
 
 .examples {
-  display: flex;
   flex-basis: calc(100% / 3 - 90px);
-  align-items: center;
 }
 
 .example-item:not(:last-child) {
@@ -543,8 +532,6 @@ body {
 }
 
 .shadow {
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: absolute;
   bottom: 0;
@@ -558,9 +545,10 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  font-weight: 700px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -572,14 +560,14 @@ body {
 }
 
 .our-team {
-  font-weight: bold;
   font-size: 36px;
-  line-height: 1.17;
+  font-weight: bold;
+  line-height: 42px;
+  letter-spacing: 0.03em;
   text-align: center;
   justify-content: center;
   color: var(--header-text-color);
   margin-bottom: 50px;
-  letter-spacing: 0.03em;
 }
 
 .people-list {
@@ -606,11 +594,11 @@ body {
 
 .team-personal-name {
   margin-bottom: 10px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team-position {
@@ -632,11 +620,11 @@ body {
 .regular-clients {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 36px;
+  font-weight: 700px;
   line-height: 42px;
-  text-align: center;
   letter-spacing: 0.8px;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -714,9 +702,9 @@ body {
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700px;
+  line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
@@ -743,9 +731,6 @@ body {
 }
 
 .address-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -764,9 +749,9 @@ body {
 .social-head {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -807,9 +792,9 @@ body {
 .form-head {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700px;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -842,13 +827,8 @@ body {
 }
 
 .footer-input::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: calc(20 / 16);
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -861,14 +841,12 @@ body {
   border-radius: 4px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
-  border: none;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-weight: 700px;
+  line-height: 30px;
   letter-spacing: 0.06em;
+  border: none;
+  text-align: center;
   padding-left: 29px;
   color: #ffffff;
   cursor: pointer;
@@ -926,9 +904,6 @@ body {
 }
 
 .animate-plate {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
@@ -947,9 +922,9 @@ body {
 
 .description {
   padding-top: 20px;
-  font-weight: bold;
   font-size: 18px;
-  line-height: 2;
+  font-weight: bold;
+  line-height: 36px;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
 }
@@ -1007,9 +982,9 @@ body {
 .description {
   padding-bottom: 4px;
   padding-left: 24px;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  font-weight: 700px;
+  line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
 }
@@ -1018,9 +993,9 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.87;
+  font-weight: normal;
+  line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1037,10 +1012,10 @@ body {
 .modal-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(23 / 20);
   text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 23px;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: #212121;
