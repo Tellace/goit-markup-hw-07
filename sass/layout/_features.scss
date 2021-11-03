@@ -19,7 +19,7 @@
   list-style: none;
   display: flex;
 }
-.feauters-item:nth-child(0) {
+.advantage__item:nth-child(0) {
   width: 270px;
   flex-basis: calc(100% / 4 - 30px);
   font-weight: bold;
@@ -28,7 +28,7 @@
   color: var(--secondary-title-color);
   margin-left: 30px;
 }
-.feauters-item::before {
+.advantage__item::before {
   content: "";
   display: block;
   margin-bottom: 30px;
