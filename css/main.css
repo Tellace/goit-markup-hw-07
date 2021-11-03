@@ -523,11 +523,11 @@ body {
   flex-basis: calc(100% / 3 - 90px);
 }
 
-.example-item:not(:last-child) {
+.examples__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.example-item {
+.examples__item {
   position: relative;
 }
 
@@ -575,7 +575,7 @@ body {
   justify-content: flex-start;
 }
 
-.team-item {
+.people-list__item {
   margin-right: 30px;
   background-color: var(--primary-title-color);
   border-radius: 0px 0px 4px 4px;
@@ -584,7 +584,7 @@ body {
   max-height: 100%;
 }
 
-.team-item:nth-child(4n) {
+.people-list__item:nth-child(4n) {
   margin-right: 0;
 }
 

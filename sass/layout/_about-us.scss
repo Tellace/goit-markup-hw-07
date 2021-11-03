@@ -16,10 +16,10 @@
   @extend %align-item;
   flex-basis: calc(100% / 3 - 90px);
 }
-.example-item:not(:last-child) {
+.examples__item:not(:last-child) {
   margin-right: 30px;
 }
-.example-item {
+.examples__item {
   position: relative;
 }
 .shadow {

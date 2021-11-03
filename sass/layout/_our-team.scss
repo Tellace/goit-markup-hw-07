@@ -14,7 +14,7 @@
   display: flex;
   justify-content: flex-start;
 }
-.team-item {
+.people-list__item {
   margin-right: 30px;
   background-color: var(--primary-title-color);
   border-radius: 0px 0px 4px 4px;
@@ -23,7 +23,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   max-height: 100%;
 }
-.team-item:nth-child(4n) {
+.people-list__item:nth-child(4n) {
   margin-right: 0;
 }
 .team-img {
