@@ -37,7 +37,7 @@
 .footer-studio {
   color: var(--primary-title-color);
 }
-.footer-link {
+.footer-menu__footer-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -48,11 +48,11 @@
   }
 }
 
-.footer-item:not(:last-child) {
+.footer-menu__footer-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
-.address-link {
+.footer-menu__address-link {
   @extend %roboto-txt;
   font-size: 14px;
   line-height: 1.71;
