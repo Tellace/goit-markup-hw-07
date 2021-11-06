@@ -1,4 +1,4 @@
-.filter-btn {
+.filter__btn {
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -19,12 +19,12 @@
   }
 }
 
-.plate {
+.work-list__plate {
   left: 215px;
   top: 262px;
   background: #ffffff;
 }
-.plate-link {
+.work-list__plate-link {
   height: 404px;
   &:hover,
   &:focus {
@@ -77,30 +77,30 @@
   display: flex;
   justify-content: center;
 }
-.filter-list {
+.filter__list {
   margin-right: 9px;
   margin-bottom: 50px;
 }
-.filter-list:not(:last-child) {
+.filter__list:not(:last-child) {
   margin-right: 8px;
 }
-.filter-list:nth-child(5n) {
+.filter__list:nth-child(5n) {
   margin-right: 0px;
 }
 .work-list {
   display: flex;
   flex-wrap: wrap;
 }
-.plate {
+.work-list__plate {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
   border: 1px solid #eeeeee;
 }
-.plate:nth-last-child(3n + 1) {
+.work-list__plate:nth-last-child(3n + 1) {
   margin-right: 0px;
 }
-.plate:nth-last-child(-n + 3) {
+.work-list__plate:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
 .description {
