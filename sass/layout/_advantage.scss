@@ -1,6 +1,9 @@
-.features {
+.advantage {
   padding-top: 94px;
   padding-bottom: 47px;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
 }
 .advantage-title {
   font-weight: bold;
@@ -13,11 +16,6 @@
 .advantage-description {
   color: var(--header-link-color);
   @include font(14px, 400px, 24px, 0.03em);
-}
-.advantage {
-  text-decoration: none;
-  list-style: none;
-  display: flex;
 }
 .advantage__item:nth-child(0) {
   width: 270px;

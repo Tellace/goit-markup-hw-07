@@ -19,7 +19,7 @@
   }
 }
 
-.work-list__plate {
+.work-list__item {
   left: 215px;
   top: 262px;
   background: #ffffff;
@@ -77,21 +77,21 @@
   display: flex;
   justify-content: center;
 }
-.filter__list {
+.filter__item {
   margin-right: 9px;
   margin-bottom: 50px;
 }
-.filter__list:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
-.filter__list:nth-child(5n) {
+.filter__item:nth-child(5n) {
   margin-right: 0px;
 }
 .work-list {
   display: flex;
   flex-wrap: wrap;
 }
-.work-list__plate {
+.work-list__item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
