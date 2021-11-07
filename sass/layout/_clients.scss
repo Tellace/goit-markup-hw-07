@@ -17,10 +17,10 @@
   justify-content: center;
   list-style: none;
 }
-.clients-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.clients-link {
+.clients-list__link {
   display: flex;
   width: 170px;
   height: 92px;

@@ -12,14 +12,14 @@
   color: var(--header-text-color);
   margin-bottom: 50px;
 }
-.examples {
+.examples-list {
   @extend %align-item;
   flex-basis: calc(100% / 3 - 90px);
 }
-.examples__item:not(:last-child) {
+.examples-list__item:not(:last-child) {
   margin-right: 30px;
 }
-.examples__item {
+.examples-list__item {
   position: relative;
 }
 .shadow {

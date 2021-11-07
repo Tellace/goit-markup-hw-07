@@ -9,7 +9,7 @@
   --our-team-color: #f5f4fa;
 }
 
-.backdrop, .check-text, .check-text span, .header-contact, .header-menu, .examples, .shadow, .footer-input::placeholder, .form-btn {
+.backdrop, .check-text, .check-text span, .header-contact, .header-menu, .examples-list, .shadow, .footer-input::placeholder, .form-btn {
   display: flex;
   align-items: center;
 }
@@ -432,13 +432,15 @@ body {
 .advantage {
   padding-top: 94px;
   padding-bottom: 47px;
+}
+
+.advantage-list {
   text-decoration: none;
-  list-style: none;
   display: flex;
 }
 
 .advantage-title {
-  font-weight: bold;
+  font-weight: bo;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -516,15 +518,15 @@ body {
   margin-bottom: 50px;
 }
 
-.examples {
+.examples-list {
   flex-basis: calc(100% / 3 - 90px);
 }
 
-.examples__item:not(:last-child) {
+.examples-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.examples__item {
+.examples-list__item {
   position: relative;
 }
 
@@ -631,11 +633,11 @@ body {
   list-style: none;
 }
 
-.clients-item:not(:last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.clients-list__link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -648,11 +650,11 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover, .clients-link:focus {
+.clients-list__link:hover, .clients-list__link:focus {
   border: 1px solid #2196f3;
 }
 
-.clients-link:hover .clients-icon, .clients-link:focus .clients-icon {
+.clients-list__link:hover .clients-icon, .clients-list__link:focus .clients-icon {
   fill: #2196f3;
 }
 

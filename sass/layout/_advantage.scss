@@ -1,12 +1,15 @@
 .advantage {
   padding-top: 94px;
   padding-bottom: 47px;
+}
+
+.advantage-list {
   text-decoration: none;
-  list-style: none;
   display: flex;
 }
+
 .advantage-title {
-  font-weight: bold;
+  font-weight: bo;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -37,6 +40,7 @@
   background: #f5f4fa;
   border-radius: 4px;
 }
+
 .icon-1::before {
   background-image: url(../images/satelite.svg);
   background-repeat: no-repeat;
